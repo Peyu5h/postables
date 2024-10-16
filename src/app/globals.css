@@ -1,3 +1,5 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap");
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
@@ -9,8 +11,26 @@
 
 @media (prefers-color-scheme: dark) {
   :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
+    --background: #ffffff;
+    --foreground: #363535;
+    --foreground2: #474747;
+    --foreground3: #bab8b8;
+    --muted: #bab8b8;
+    --border: #f3f0f0;
+    --primary: #fefefe;
+    --primary-hover: #363535;
+    --secondary: #f2f2f2;
+    --tertiary: #4a4b4b;
+    --blu: #80c0ee;
+    --org: #f6a886;
+    --grn: #77be7e;
+    --peach: #e7c694;
+    --blackBg: #121111;
+    --blackFg: #bab8b8;
+    --blackPri: #262525;
+    --gray-secondary: #f6f6f6;
+    --gray-secondary-foreground: #8c8b8b;
+    --gray-secondary-foreground-muted: #bcbaba;
   }
 }
 
