@@ -22,6 +22,7 @@ const config: Config = {
         border: "var(--border)",
 
         primary: "var(--primary)",
+        primaryForeground: "var(--primary-foreground)",
         primaryHover: "var(--primary-hover)",
         secondary: "var(--secondary)",
         tertiary: "var(--tertiary)",
@@ -43,6 +44,7 @@ const config: Config = {
         lightPurple: "#E3B4FF",
         hoverPaste: "#5A5A5A",
         mutedGray: "#797878",
+        borderGray: "#84cc16",
       },
     },
   },
