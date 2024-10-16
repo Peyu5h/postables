@@ -1,7 +1,10 @@
+"use client";
+
 import Image from "next/image";
 import TweetCircle from "~/utils/icons/tweetCircle";
 import { GoPaste } from "react-icons/go";
 import Navbar from "./components/Navbar";
+import PostpreviewSection from "./components/PostpreviewSection";
 
 export default function Home() {
   return (
@@ -54,19 +57,8 @@ export default function Home() {
           </div>
         </div>
       </section>
-      <div className="h-48"></div>
-      <div className="h-48"></div>
-      <div className="h-48"></div>
-      <div className="h-48"></div>
-      <div className="h-48"></div>
-      <div className="h-48"></div>
-      <div className="h-48"></div>
-      <div className="h-48"></div>
-      <div className="h-48"></div>
-      <div className="h-48"></div>
-      <div className="h-48"></div>
-      <div className="h-48"></div>
-      <div className="h-48"></div>
+
+      <PostpreviewSection />
     </div>
   );
 }
