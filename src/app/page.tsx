@@ -5,6 +5,7 @@ import TweetCircle from "~/utils/icons/tweetCircle";
 import { GoPaste } from "react-icons/go";
 import Navbar from "./components/Navbar";
 import PostpreviewSection from "./components/PostpreviewSection";
+import HoverCard from "./components/HoverCard";
 
 export default function Home() {
   return (
@@ -59,6 +60,17 @@ export default function Home() {
       </section>
 
       <PostpreviewSection />
+
+      <section className="mx-auto flex h-fit w-full max-w-6xl flex-col gap-3.5 py-12 md:gap-8 md:py-24">
+        <div className="px-4 font-aspekta text-2xl font-medium tracking-[-0.2px] text-neutral-800 md:text-4xl xl:pe-4 xl:ps-0">
+          How it works
+        </div>
+        <div className="flex gap-4 overflow-y-visible overflow-x-scroll px-4 pb-4 md:overflow-x-visible lg:pb-4 lg:pe-4 lg:ps-0">
+          <HoverCard />
+          <HoverCard />
+          <HoverCard />
+        </div>
+      </section>
     </div>
   );
 }
