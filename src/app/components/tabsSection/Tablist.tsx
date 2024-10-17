@@ -37,7 +37,7 @@ const SlideTabs = ({ onTabChange }: { onTabChange: (tab: string) => void }) => {
         opacity: 1,
       });
     }
-  }, [activeTab]);
+  }, [activeTab, tabs]);
 
   const handleKeyDown = (event: React.KeyboardEvent<HTMLUListElement>) => {
     const currentIndex = tabs.indexOf(activeTab);
@@ -64,6 +64,21 @@ const SlideTabs = ({ onTabChange }: { onTabChange: (tab: string) => void }) => {
         setHoveredTab(null);
       }}
       onKeyDown={handleKeyDown}
+      ref={(el) => {
+        if (el) {
+          // Force a reflow to ensure correct initial positioning
+          setTimeout(() => {
+            const activeTabElement = tabsRef.current[tabs.indexOf(activeTab)];
+            if (activeTabElement) {
+              setPosition({
+                left: activeTabElement.offsetLeft,
+                width: activeTabElement.offsetWidth,
+                opacity: 1,
+              });
+            }
+          }, 0);
+        }
+      }}
       className="relative flex w-fit rounded-2xl border-2 border-muted bg-secondary p-1"
       role="tablist"
     >

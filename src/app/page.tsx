@@ -15,7 +15,7 @@ import Footer from "./components/footer/Footer";
 import TabSection from "./components/tabsSection/TabSection";
 import OurFeatures from "./components/ourFeatures/OurFeatures";
 import FadedSocials from "./components/fadedSocials/FadedSocials";
-import MagneticBtn from "./components/MagnetEffect";
+import MagneticBtn from "./components/animations/MagnetEffect";
 import { FaArrowRightLong } from "react-icons/fa6";
 import LocomotiveScroll from "locomotive-scroll";
 import { useEffect } from "react";
@@ -99,10 +99,11 @@ export default function Home() {
       <FadedSocials />
 
       <div className="relative mx-auto mt-8 flex w-full max-w-6xl flex-col items-start gap-6 py-12 font-aspekta md:mt-0 md:gap-12 md:py-24">
-        <p className="relative max-w-4xl text-balance font-aspekta text-3xl font-medium tracking-[-0.4px] text-muted md:text-[40px] md:leading-[42px]">
+        <p className="relative max-w-4xl text-balance font-aspekta text-3xl font-medium tracking-[-0.4px] text-foreground3 md:text-[40px] md:leading-[42px]">
           We help you create postable content that not only
-          <span className="text-foreground"> looks great </span>but also
-          <span className="text-foreground"> engages your audience</span>.
+          <span className="text-foreground"> looks great</span>
+          <span> but also </span>
+          <span className="text-foreground">engages your audience</span>.
         </p>
 
         <Button>Get Started for FREE</Button>
@@ -113,11 +114,11 @@ export default function Home() {
       <TabSection />
 
       <div className="relative mx-auto flex w-full max-w-6xl flex-col items-start gap-6 px-4 py-12 md:gap-12 md:py-24 xl:pe-4 xl:ps-0">
-        <p className="relative max-w-4xl text-balance font-aspekta text-3xl font-medium tracking-[-0.4px] text-muted md:text-[40px] md:leading-[42px]">
+        <p className="relative max-w-4xl text-balance font-aspekta text-3xl font-medium tracking-[-0.4px] text-foreground3 md:text-[40px] md:leading-[42px]">
           <span className="text-foreground">
             Grow your audience with powerful visuals
           </span>
-          shared across all your social media platforms.
+          <span> shared across all your social media platforms.</span>
         </p>
         <Button>Get Started for FREE</Button>
       </div>
@@ -137,8 +138,8 @@ export default function Home() {
         <h3 className="text-2xl font-medium tracking-[-0.2px] md:text-[40px] md:leading-[42px] md:tracking-[-1px]">
           FAQ
         </h3>
-        <p className="hidden max-w-lg text-balance text-xl font-medium text-black md:mb-9 md:mt-4 md:block">
-          Let’s help you with some of your frequently asked questions.
+        <p className="hidden max-w-lg text-balance text-xl font-medium text-foreground3 md:mb-9 md:mt-4 md:block">
+          Let&apos;s help you with some of your frequently asked questions.
         </p>
 
         <div className="relative flex w-full flex-col gap-4 md:flex-row md:gap-24">

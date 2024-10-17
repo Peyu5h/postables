@@ -1,6 +1,6 @@
 import React from "react";
 import { FaArrowRightLong } from "react-icons/fa6";
-import MagneticBtn from "./MagnetEffect";
+import MagneticBtn from "./animations/MagnetEffect";
 
 const Button = ({ children }: { children: React.ReactNode }) => {
   return (
