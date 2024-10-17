@@ -7,8 +7,8 @@ const HoverCard = () => {
   const x = useMotionValue(0);
   const y = useMotionValue(0);
 
-  const rotateX = useTransform(y, [-100, 100], [-10, 10]); // Inverted
-  const rotateY = useTransform(x, [-100, 100], [10, -10]); // Inverted
+  const rotateX = useTransform(y, [-100, 100], [-10, 10]);
+  const rotateY = useTransform(x, [-100, 100], [10, -10]);
 
   const handleMouseMove = (event: React.MouseEvent<HTMLDivElement>) => {
     if (!ref.current) return;
