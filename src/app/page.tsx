@@ -18,9 +18,19 @@ import FadedSocials from "./components/fadedSocials/FadedSocials";
 import MagneticBtn from "./components/MagnetEffect";
 import { FaArrowRightLong } from "react-icons/fa6";
 import LocomotiveScroll from "locomotive-scroll";
+import { useEffect } from "react";
 
 export default function Home() {
-  const locomotiveScroll = new LocomotiveScroll();
+  useEffect(() => {
+    let scroll: LocomotiveScroll;
+    import("locomotive-scroll").then((locomotiveModule) => {
+      scroll = new locomotiveModule.default();
+    });
+
+    return () => {
+      if (scroll) scroll.destroy();
+    };
+  });
 
   return (
     <div className="">

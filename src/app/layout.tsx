@@ -20,7 +20,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={`font-sans ${aspekta.variable} antialiased`}>
+      <body className={`font-sans ${aspekta.variable} scrollbar antialiased`}>
         {children}
       </body>
     </html>
