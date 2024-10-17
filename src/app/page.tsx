@@ -6,12 +6,9 @@ import { GoPaste } from "react-icons/go";
 import Navbar from "./components/Navbar";
 import PostpreviewSection from "./components/postPreview/PostpreviewSection";
 import HoverCard from "./components/HoverCard";
-
 import Button from "./components/Button";
-
 import { FAQ } from "./components/FAQ";
 import Footer from "./components/footer/Footer";
-
 import TabSection from "./components/tabsSection/TabSection";
 import OurFeatures from "./components/ourFeatures/OurFeatures";
 import FadedSocials from "./components/fadedSocials/FadedSocials";
@@ -98,7 +95,7 @@ export default function Home() {
 
       <FadedSocials />
 
-      <div className="relative mx-auto mt-8 flex w-full max-w-6xl flex-col items-start gap-6 py-12 font-aspekta md:mt-0 md:gap-12 md:py-24">
+      <div className="relative mx-auto mt-8 flex w-full max-w-6xl flex-col items-start gap-6 py-12 pl-4 font-aspekta md:mt-0 md:gap-12 md:py-24">
         <p className="relative max-w-4xl text-balance font-aspekta text-3xl font-medium tracking-[-0.4px] text-foreground3 md:text-[40px] md:leading-[42px]">
           We help you create postable content that not only
           <span className="text-foreground"> looks great</span>
